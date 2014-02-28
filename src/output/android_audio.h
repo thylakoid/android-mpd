@@ -77,12 +77,13 @@ typedef enum {
 
 typedef enum {
     /* output channels */
-    AUDIO_CHANNEL_OUT_FRONT_LEFT            = 0x1,
-    AUDIO_CHANNEL_OUT_FRONT_RIGHT           = 0x2,
-    AUDIO_CHANNEL_OUT_FRONT_CENTER          = 0x4,
+    AUDIO_CHANNEL_OUT_FRONT_LEFT            = 0x4,
+    AUDIO_CHANNEL_OUT_FRONT_RIGHT           = 0x8,
+    AUDIO_CHANNEL_OUT_FRONT_CENTER          = 0xf,
     AUDIO_CHANNEL_OUT_LOW_FREQUENCY         = 0x8,
-    AUDIO_CHANNEL_OUT_BACK_LEFT             = 0x10,
-    AUDIO_CHANNEL_OUT_BACK_RIGHT            = 0x20,
+    AUDIO_CHANNEL_OUT_BACK_LEFT             = 0x40,
+    AUDIO_CHANNEL_OUT_BACK_RIGHT            = 0x80,
+
     AUDIO_CHANNEL_OUT_FRONT_LEFT_OF_CENTER  = 0x40,
     AUDIO_CHANNEL_OUT_FRONT_RIGHT_OF_CENTER = 0x80,
     AUDIO_CHANNEL_OUT_BACK_CENTER           = 0x100,
